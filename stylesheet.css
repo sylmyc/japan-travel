@@ -1,0 +1,97 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+body {
+    background-color: #fff5d9;
+}
+
+main {
+    background-image: url(images/japan-background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.title {
+    margin: auto;
+    font-size: 2rem;
+    flex-basis: 50%;
+    text-align: center;
+}
+.logo {
+    margin: auto;
+}
+.menu {
+    margin: auto;
+    flex-basis: 50%;
+    text-align:center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+    padding-inline-start: 0%;
+    margin: auto;
+}
+nav li {
+    display:inline-block;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    padding-top: 2rem;
+}
+.top-image {
+    height:auto;
+    width: 100%;
+}
+
+.youtube-video {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.destinations {
+    text-align: center;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    flex-flow: row wrap;
+    margin: auto;
+    margin: 3rem;
+}
+
+main li {
+    padding-left: 2rem;
+}
+.tokyo, .osaka {
+border-bottom: grey solid 3px;
+margin: 5rem;
+}
+.kyoto {
+    padding-bottom: 3rem;
+}
+footer p {
+    text-align: center;
+    margin-bottom: 2%;
+    align-items: center;
+    line-height: 2rem;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline ;
+}
