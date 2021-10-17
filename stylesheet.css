@@ -2,47 +2,45 @@ html {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 body {
-    background-color: #fff5d9;
-}
-
-main {
     background-image: url(images/japan-background-2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 }
+
 header {
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.title {
-    margin: auto;
-    font-size: 2rem;
-    flex-basis: 50%;
-    text-align: center;
-}
 .logo {
-    margin: auto;
+    height: 100px;
 }
 .menu {
-    margin: auto;
-    flex-basis: 50%;
-    text-align:center;
+    padding-right: 5%;
 
 }
 
 nav ul {
     list-style-type: none;
     font-size: 1.25rem;
-    padding-inline-start: 0%;
+    padding: 10px;
     margin: auto;
+    text-decoration: none;
 }
-nav li {
-    display:inline-block;
-    padding-left:2rem;
-    padding-right:2rem;
+
+
+@media (min-width: 700px) {
+    nav li {
+        display: inline-block;
+        padding-right: 20px;
+    }
+    .logo {
+        height: 150px;
+        padding-left: 20px;
+    }
 }
 
 h2, h3, h4 {
