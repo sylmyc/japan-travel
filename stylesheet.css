@@ -13,6 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom:black 3px solid;
 }
 
 .logo {
@@ -38,44 +39,58 @@ nav ul {
         padding-right: 20px;
     }
     .logo {
-        height: 150px;
+        height: 150px; 
         padding-left: 20px;
     }
 }
 
-h2, h3, h4 {
+.main-title {
     text-align: center;
     padding-top: 2rem;
 }
-.top-image {
-    height:auto;
-    width: 100%;
+
+h2 {
+    text-align: center;
+    text-decoration: black underline 3px;
+    padding-top: 2rem;
 }
 
+.places {
+    display:flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px) {
+    .places {
+        flex-direction: column;
+    }
+    main {
+        text-align: center;
+    }
+    .youtube-video {
+        width: 100%;
+    }
+}
+
+.where-to-go-places {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+}
 .youtube-video {
-    display: block;
-    margin: auto;
-    max-width: 100%;
+    flex-basis: 100%;
 }
 .destinations {
-    text-align: center;
     list-style-type: none;
-    display:flex;
-    justify-content:space-around;
-    flex-flow: row wrap;
-    margin: auto;
-    margin: 3rem;
+    padding: 0;
+    text-align: center;
 }
 
-main li {
-    padding-left: 2rem;
-}
-.tokyo, .osaka {
-border-bottom: grey solid 3px;
-margin: 5rem;
-}
-.kyoto {
-    padding-bottom: 3rem;
+.tokyo, .osaka, .kyoto {
+    margin: 4rem; 
 }
 footer p {
     text-align: center;
