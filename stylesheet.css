@@ -49,27 +49,19 @@ nav ul {
     padding-top: 2rem;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
     text-decoration: black underline 3px;
-    padding-top: 2rem;
+}
+
+p {
+    text-align: center;
 }
 
 .places {
     display:flex;
     flex-direction: row;
-}
-
-@media (max-width: 700px) {
-    .places {
-        flex-direction: column;
-    }
-    main {
-        text-align: center;
-    }
-    .youtube-video {
-        width: 100%;
-    }
+    align-items: center;
 }
 
 .where-to-go-places {
@@ -92,6 +84,23 @@ h2 {
 .tokyo, .osaka, .kyoto {
     margin: 4rem; 
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3px;
+}
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 4px;
+    vertical-align: middle;
+    width: 100%;
+}
 footer p {
     text-align: center;
     margin-bottom: 2%;
@@ -100,6 +109,7 @@ footer p {
 }
 a:link {
     text-decoration: none;
+    color: black
 }
 a:visited {
     text-decoration: none;
@@ -107,4 +117,24 @@ a:visited {
 }
 a:hover {
     text-decoration: underline ;
+}
+
+@media (max-width: 700px) {
+    .places {
+        flex-direction: column;
+    }
+    main {
+        text-align: center;
+    }
+    .youtube-video {
+        width: auto;
+    }
+    .gallery {
+        flex-wrap: wrap;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    
 }
