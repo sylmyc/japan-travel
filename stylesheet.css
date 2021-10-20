@@ -46,7 +46,17 @@ nav ul {
 
 .main-title {
     text-align: center;
-    padding-top: 2rem;
+    position: relative;
+    animation-name: japan-travel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes japan-travel {
+    0% {top: 0px;}
+    50% {top: 50px; color:burlywood}
+    100% {top: 0px;}
 }
 
 h2, h3 {
@@ -101,23 +111,43 @@ p {
     vertical-align: middle;
     width: 100%;
 }
+
+.bottom {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+a.back-to-top:link {
+    text-decoration: none;
+    color: rgb(192, 150, 86);
+}
+a.back-to-top:visited {
+    text-decoration: none;
+    color: rgb(192, 150, 86);
+}
+
+a.back-to-top:hover {
+    text-decoration: underline ;
+}
+
 footer p {
     text-align: center;
     margin-bottom: 2%;
     align-items: center;
     line-height: 2rem;
 }
-a:link {
+header a:link {
     text-decoration: none;
     color: black
 }
-a:visited {
+header a:visited {
     text-decoration: none;
     color: black;
 }
-a:hover {
+header a:hover {
     text-decoration: underline ;
 }
+
 
 @media (max-width: 700px) {
     .places {
@@ -135,6 +165,10 @@ a:hover {
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+    .main-title {
+        text-align: center;
+        animation: none;
     }
     
 }
