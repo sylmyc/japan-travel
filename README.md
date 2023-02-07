@@ -1,2 +1,2 @@
 # japan-travel
-url: https://sylmyc.github.io/japan-travel/Japan-travel.html
+url: https://japan-travel-psi.vercel.app/
