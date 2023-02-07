@@ -130,6 +130,31 @@ a.back-to-top:hover {
     text-decoration: underline ;
 }
 
+.voting {
+    text-align: center;
+    padding-top: 3rem;
+}
+button {
+    margin:5px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+   }
+   
+   #votes {
+    font-weight: bold;
+    font-size: 25px;
+   }
+   #yes {
+     background-color: green;
+   }
+   #no {
+     background-color: red;
+   }
+   
+
 footer p {
     text-align: center;
     margin-bottom: 2%;
